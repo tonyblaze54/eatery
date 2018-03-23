@@ -1,0 +1,38 @@
+﻿CREATE TABLE `register` (
+`id` int(4) NOT NULL auto_increment,
+`fullname` varchar(255) NOT NULL default '',
+`email` varchar(255) NOT NULL default '',
+`password` varchar(65) NOT NULL default '',
+`pix` varchar(25) NOT NULL default '',
+`datetime` varchar(25) NOT NULL default '',
+PRIMARY KEY (`id`)
+)
+
+
+CREATE TABLE `request` (
+`id` int(4) NOT NULL auto_increment,
+`fullname` varchar(65) NOT NULL default '',
+`food` varchar(65) NOT NULL default '',
+`Snacks` varchar(65) NOT NULL default '',
+`beverage` varchar(65) NOT NULL default '',
+`drink` varchar(65) NOT NULL default '',
+`contact` longtext NOT NULL,
+`datetime` varchar(25) NOT NULL default '',
+PRIMARY KEY (`id`)
+)
+
+
+
+CREATE TABLE `registeradmin` (
+`id` int(4) NOT NULL auto_increment,
+`password` varchar(255) NOT NULL default '',
+`datetime` varchar(25) NOT NULL default '',
+PRIMARY KEY (`id`)
+)
+
+
+
+
+
+
+
